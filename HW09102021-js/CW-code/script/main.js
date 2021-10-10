@@ -1,7 +1,3 @@
-
-
-
-
 const btn = document.querySelector(".search-btn");
 const text = document.querySelector(".text");
 const out = document.querySelector(".part2");
@@ -16,7 +12,7 @@ function concat30words(str){
   let b = "";
 while (b.length < 30) {
 b = b.concat(str);
-
+console.log(b.length)
 } 
 return b.slice(0,30)
 }
@@ -44,18 +40,16 @@ function generate (){
     }
   }
   out.innerHTML = tempStr;
-  max.innerHTML =   `First max length word -> "${splStr[tempMax]}"`;
+  max.innerHTML =   `First max length word ${splStr[tempMax]}`;
   let a = concat30words(text.value)
   
-  sent.innerHTML = `Sentence with 30 symbols -> "${a}."`
-  console.log(splStr[tempMax]);
-  console.log(a);
+  sent.innerHTML = `Sentence with 30 symbols -> ${a}`
+  console.log(text.value);
 }
 
 
 
 btn.addEventListener("click", generate);
-
 
 
 
