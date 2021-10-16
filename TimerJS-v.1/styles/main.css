@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Digital";
+  src: url("../fonts/digital-7.mono.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.timer__inner {
+  width: 280px;
+  height: 250px;
+  margin: 200px auto;
+  padding: 45px;
+}
+
+.timer__main {
+  position: relative;
+  width: 270px;
+  height: 80px;
+  border: 4px solid lightgreen;
+  text-align: center;
+}
+
+.timer__main .timer__main-clock {
+  font-family: "Digital";
+  font-size: 58px;
+  padding-top: 5px;
+  color: red;
+  background-color: black;
+}
+
+.timer-btn {
+  width: 270px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+input {
+  width: 120px;
+  height: 35px;
+  padding-left: 10px;
+}
+
+button {
+  width: 120px;
+  height: 35px;
+  margin-right: 0px;
+  font-size: 25px;
+}
+
+button::before {
+  color: red;
+}
+
+body {
+  background-color: black;
+}
+
+.play-btn {
+  background-color: yellow;
+}
+/*# sourceMappingURL=main.css.map */

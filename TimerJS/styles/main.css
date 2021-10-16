@@ -1,16 +1,18 @@
-@charset "UTF-8";
 @font-face {
-  font-family: "fontello";
+  font-family: 'fontello';
   src: url("../fonts/fontello.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
+
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *, *::before, *::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 .timer__inner {
@@ -29,7 +31,7 @@ html {
 }
 
 .timer__main-clock {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 58px;
   padding-top: 5px;
 }
@@ -37,9 +39,15 @@ html {
 .timer-btn {
   width: 270px;
   height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
@@ -56,6 +64,7 @@ button {
 }
 
 button::before {
-  content: "";
-  font-family: "fontello";
-}/*# sourceMappingURL=main.css.map */
+  content: '\e800';
+  font-family: 'fontello';
+}
+/*# sourceMappingURL=main.css.map */
